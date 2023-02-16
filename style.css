@@ -1,0 +1,201 @@
+/* global styles */
+body {
+    background-color: #ddb057;
+    color: #121017;
+    font-family: sans-serif;
+  }
+  
+  /* navigation */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: white;
+    padding: 0.5rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin-right: 1rem;
+  }
+  
+  nav a {
+    color: #ddb057;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  /* landing page */
+  #landing {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .landing-content {
+    display: flex;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .image-container {
+    flex: 0.5;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .landing-text {
+    flex: 1;
+    text-align: left;
+    margin-left: 2rem;
+  }
+  
+  .landing-text h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .landing-text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  /* voice reels */
+  #voice-reels {
+    padding: 50px 20px;
+    background-color: white;
+    border-radius: 5%;
+  }
+  
+  #voice-reels h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ddb057;
+  }
+  
+  #voice-reels ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: #ddb057;
+    border-radius: 5%;
+  }
+  
+  #voice-reels li {
+    margin: 20px;
+  }
+  
+  /* about me */
+  #about-me {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+  }
+  
+  #about-me h2 {
+    margin-bottom: 20px;
+  }
+  
+  #about-me img {
+    width: 50%;
+    max-width: 300px;
+    margin-left: 20px;
+    border-radius: 50%;
+  }
+  
+  #about-me p {
+    font-size: 1.2rem;
+    max-width: 50%;
+  }
+  
+  /* testimonials */
+  #testimonials {
+    padding: 50px 20px;
+  }
+  
+  #testimonials h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #testimonials ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #testimonials li {
+    margin-bottom: 40px;
+  }
+  
+  #testimonials h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  #testimonials p {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+  
+  /* contact me */
+  #contact-me {
+    padding: 50px 20px;
+  }
+  
+  #contact-me h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #contact-me ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #contact-me li {
+    margin: 0 20px;
+  }
+  
+  #contact-me a {
+    color: white;
+    background-color: #ddb057;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  #contact-me a:hover {
+    background-color: white;
+    color: #ddb057;
+  }
