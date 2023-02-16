@@ -35,55 +35,63 @@ body {
     font-size: 1.2rem;
   }
   
-  /* landing page */
-  #landing {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-  
-  .landing-content {
-    display: flex;
-    align-items: center;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-  
-  .image-container {
-    flex: 0.5;
-    overflow: hidden;
-    border-radius: 50%;
-  }
-  
-  .image-container img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  .landing-text {
-    flex: 1;
-    text-align: left;
-    margin-left: 2rem;
-  }
-  
-  .landing-text h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  .landing-text h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-top: 0;
-  }
+ /* landing page */
+#landing {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.landing-content {
+  display: flex;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.image-container {
+  flex: 0.5;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.landing-text {
+  flex: 1;
+  text-align: left;
+  margin-left: 2rem;
+}
+.landing-text #name-text {
+  color: #ddb057;
+  margin-top: -1rem;
+}
+
+.landing-text h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.landing-text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0;
+}
   
   /* voice reels */
   #voice-reels {
     padding: 50px 20px;
-    background-color: white;
+    padding-top: 1px;
+    background-color: #121017;
     border-radius: 5%;
   }
   
@@ -91,6 +99,7 @@ body {
     text-align: center;
     margin-bottom: 20px;
     color: #ddb057;
+    font-size: 3rem;
   }
   
   #voice-reels ul {
@@ -109,59 +118,103 @@ body {
   }
   
   /* about me */
-  #about-me {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px 20px;
-  }
+#about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  height: 70vh;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-title h2 {
+  font-size: 3rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1500px;
+   margin: 0 auto;
+   margin-bottom: 8rem; 
+  height: 60%;
+}
+
+.about-text {
+  flex: .7;
+  text-align: left;
+  font-size: 1.5rem;
+  margin: 1rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.about-image {
+  flex: .4;
+  max-width: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
   
-  #about-me h2 {
-    margin-bottom: 20px;
-  }
   
-  #about-me img {
-    width: 50%;
-    max-width: 300px;
-    margin-left: 20px;
-    border-radius: 50%;
-  }
-  
-  #about-me p {
-    font-size: 1.2rem;
-    max-width: 50%;
-  }
-  
-  /* testimonials */
-  #testimonials {
-    padding: 50px 20px;
-  }
-  
-  #testimonials h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  #testimonials ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  #testimonials li {
-    margin-bottom: 40px;
-  }
-  
-  #testimonials h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  #testimonials p {
-    font-size: 1.2rem;
-    margin-top: 0;
-  }
+ /* testimonials */
+#testimonials {
+  padding-top: 1px;
+}
+
+#testimonials h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  background-color: #121017;
+  color: #ddb057;
+}
+
+#testimonials ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#testimonials li {
+  width: calc(50% - 20px);
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #121017;
+  border-radius: 10px;
+  color: white;
+}
+
+#testimonials li:nth-child(2n) {
+  margin-left: auto;
+}
+
+
+#testimonials h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#testimonials p {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
   
   /* contact me */
   #contact-me {
