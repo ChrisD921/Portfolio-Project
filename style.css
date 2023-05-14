@@ -311,88 +311,87 @@ body {
     color: #ddb057;
   }
 
-
-
+  
   /* Mobile View */
-@media (max-width: 768px) {
-/* Navigation */
-.nav {
-  height: 50px;
-  font-size: 0.8rem;
-  }
-  
-  .links {
-  display: none;
-  }
-  
-  .nav span {
-  opacity: 1;
-  }
-  
-  /* Landing page */
-  #landing {
-  height: auto;
-  padding-top: 3rem;
-  }
-  
-  .landing-content {
-  flex-direction: column;
-  margin: 2rem 1rem;
-  border-radius: 0;
-  }
-  
-  .image-container {
-  margin-bottom: 1rem;
-  }
-  
-  .image-container img {
-  width: 100%;
-  height: auto;
-  }
-  
-  .landing-text {
-  margin-left: 0;
-  }
-  
-  .landing-text h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  }
-  
-  .landing-text h2 {
-  font-size: 1.5rem;
-  }
-  
-  /* Voice reels */
-  #voice-reels {
-  padding: 30px 20px;
-  width: 100%;
-  border-radius: 0;
-  }
-  
-  #voice-reels ul {
-  height: auto;
-  width: 100%;
-  }
-  
-  /* About me */
-  #about-me {
-  padding: 20px;
-  height: auto;
-  }
-  
-  .about-content {
-  flex-direction: column;
-  margin-bottom: 3rem;
-  }
-  
-  .about-text {
-  height: auto;
-  width: 100%;
-  margin: 1rem 0;
-  }
-  
-  .about-image {
-  max-width: 100%;
-  }
-}
+  @media (max-width: 720px) {
+    /* Navigation */
+    .nav {
+      height: 50px;
+      font-size: 0.8rem;
+      }
+      
+      .links {
+      display: none;
+      }
+      
+      .nav span {
+      opacity: 1;
+      }
+      
+      /* Landing page */
+      #landing {
+      height: auto;
+      padding-top: 3rem;
+      }
+      
+      .landing-content {
+      flex-direction: column;
+      margin: 2rem 1rem;
+      border-radius: 0;
+      }
+      
+      .image-container {
+      margin-bottom: 1rem;
+      }
+      
+      .image-container img {
+      width: 100%;
+      height: auto;
+      }
+      
+      .landing-text {
+      margin-left: 0;
+      }
+      
+      .landing-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      }
+      
+      .landing-text h2 {
+      font-size: 1.5rem;
+      }
+      
+      /* Voice reels */
+      #voice-reels {
+      padding: 30px 20px;
+      width: 100%;
+      border-radius: 0;
+      }
+      
+      #voice-reels ul {
+      height: auto;
+      width: 100%;
+      }
+      
+      /* About me */
+      #about-me {
+      padding: 20px;
+      height: auto;
+      }
+      
+      .about-content {
+      flex-direction: column;
+      margin-bottom: 3rem;
+      }
+      
+      .about-text {
+      height: auto;
+      width: 100%;
+      margin: 1rem 0;
+      }
+      
+      .about-image {
+      max-width: 100%;
+      }
+    }  
