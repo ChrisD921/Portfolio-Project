@@ -1,103 +1,272 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Christopher Drape - Voiceover Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+<title>Christopher Drape - Voiceover Portfolio using W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('Images/ChrisCompressed.jpg');
+  min-height: 100%;
+}
+</style>
+<body>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Source+Code+Pro&display=swap" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
-  </head>
-  <body>
-  
-  <nav class="nav">
-    <span class="uil uil-bars"></span>
-    <div class="links">
-      <a href="#landing">Home</a>
-      <a href="#voice-reels">Voice Reels</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#about-me">About Me</a>
-      <a href="#contact-me">Contact Me</a>
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Christopher Drape</b></h1>
+    <p> Voice Actor - Voiceover Artist</p>
+    <img src="Images/ChrisCompressed.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="Images/ChrisCompressed.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <!-- <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+      <i class="fa fa-download"></i> Download Resume
+    </button> -->
+  </header>
+
+
+  <!-- Demo Reels -->
+  <!-- <h3 class="w3-padding-24">Demo Reels</h3> -->
+
+<!-- Voice Reels -->
+<h3 class="w3-padding-24">Voice Reels</h3>
+<p><span class="w3-large w3-text-black w3-margin-right">Show Reel 1</span></p>
+<audio controls controlsList="Download">
+  <source src="Audio/Showreel.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+<p><span class="w3-large w3-text-black w3-margin-right">Character Voices</span></p>
+<audio controls controlsList="download">
+  <source src="Audio/CharacterVoices.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+
+  <!-- Portfolio Section -->
+  <!-- <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-grey">My Portfolio</h2>
+    <hr class="w3-opacity"> -->
+
+    <!-- Grid for photos -->
+    <!-- <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="Images/MordekaiTheHumble.png" style="width:100%">
+        <img src="/w3images/rocks.jpg" style="width:100%">
+        <img src="/w3images/sailboat.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="/w3images/underwater.jpg" style="width:100%">
+        <img src="/w3images/chef.jpg" style="width:100%">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/p6.jpg" style="width:100%">
+      </div> -->
+    <!-- End photo grid -->
+    <!-- </div> -->
+  <!-- End Portfolio Section -->
+  <!-- </div> -->
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About</h2>
+    <hr class="w3-opacity">
+    <p>I have had a passion for voice acting and voice over for quite a few years. Over the last couple years, I have been able to improve my skills and gather knowledge about the industry. Every day, I am grateful for the opportunity to grow and practice in a craft I love.
+      I am an experienced actor, having tried my hand at Musical Theater, Improv Sketches, as well as Student Films. I have been able to establish a small, but constantly growing, portfolio of voice work in my time in the industry. If you are looking for someone with a Baritone range for Young Adult or Adult roles, you've found your man!
+    </p>
+
+    <!--  
+    <h3 class="w3-padding-16">My Skills</h3>
+    <p class="w3-wide">Photography</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
     </div>
-  </nav>
-      <section id="landing">
-        <div class="landing-content">
-          <div class="image-container">
-            <img src="Chris.WebP" alt="Christopher Drape">
-          </div>
-          <div class="landing-text">
-            <h1>Hi, my name is </h1><h1 id="name-text">Christopher Drape</h1>
-            <h2>Voice Over Artist</h2>
-          </div>
-        </div>
-      </section>
-      
-      
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
+    </div>
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+    </div><br>
 
-    <section id="voice-reels">
-      <h2>Voice Reels</h2>
-      <ul>
-        <li><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1448215915&color=%23ddb057&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/christopherdrape" title="Christopher Drape" target="_blank" style="color: #cccccc; text-decoration: none;">Christopher Drape</a> · <a href="https://soundcloud.com/christopherdrape/voice-reel" title="Voice Reel" target="_blank" style="color: #cccccc; text-decoration: none;">Voice Reel</a></div></li>
-        <li><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1396613278&color=%23ddb057&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/christopherdrape" title="Christopher Drape" target="_blank" style="color: #cccccc; text-decoration: none;">Christopher Drape</a> · <a href="https://soundcloud.com/christopherdrape/5-character-voices-cvap-2022" title="5 Character Voices 2022" target="_blank" style="color: #cccccc; text-decoration: none;">5 Character Voices 2022</a></div></li>
-        <li><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1462244779&color=%23ddb057&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/christopherdrape" title="Christopher Drape" target="_blank" style="color: #cccccc; text-decoration: none;">Christopher Drape</a> · <a href="https://soundcloud.com/christopherdrape/tagalog-demo-reel-christopher-drape" title="Tagalog Demo Reel - Christopher Drape" target="_blank" style="color: #cccccc; text-decoration: none;">Tagalog Demo Reel - Christopher Drape</a></div></li>
-      </ul>
-    </section>
-
-    <section id="testimonials">
-      <div class="testimonials-section">
-        <h2>Testimonials</h2>
-        <div class="testimonials">
-          <div class="testimonial">
-            <!-- <img src="img/customer1.jpg" alt="Customer 1"> -->
-            <p>"Christopher worked with us as a voice actor on multiple episodes of Mystery Archive, a true crime web series for YouTube. 
-              He showed great range, up to the task of playing characters of different mentalities and voice styles. 
-              He was always timely with his submissions, and easy to work with!"</p>
-            <h3>Cameron Johnson</h3>
-            <span>Mystery Archive on YouTube</span>
-          </div>
-          <div class="testimonial">
-            <!-- <img src="img/customer2.jpg" alt="Customer 2"> -->
-            <p>"Christopher and I met via a casting website. We collaborated on two projects in which Christopher showed his wide-ranged voice. Recordings are always the best quality, he does more takes and truly understands the story and character given to him. Looking forward to our next collaboration. The future looks bright for him in the world of voice acting!"</p>
-            <h3>Kevin Krčmar</h3>
-            <span>EpicBrickProduction on YouTube</span>
-          </div>
-        </div>
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">14+</span><br>
+        Partners
       </div>
-    </section>
-
-    <section id="about-me">
-      <div class="section-title">
-        <h2 style="font-size: 3rem;">About Me</h2>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Projects Done
       </div>
-      <div class="about-content">
-        <div class="about-text">
-          <p>I have had a passion for voice acting and voice over for quite a few years. Over the last couple years, I have been able to improve my skills and gather knowledge about the industry. Every day, I am grateful for the opportunity to grow and practice in a craft I love.</p>
-          <p>I am an experienced actor, having tried my hand at Musical Theater, Improv Sketches, as well as Student Films. I have been able to establish a small, but constantly growing, portfolio of voice work in my time in the industry. If you are looking for someone with a Baritone range for Young Adult or Adult roles, you've found your man!</p>
-        </div>
-        <div class="about-image">
-          <img src="Chris2.WebP" alt="Another picture of Christopher Drape">
-        </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Clients
       </div>
-    </section>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div>
 
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+  -->
+
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24">Testimonials</h3>
+    <!-- <img src="/w3images/avatar_smoke.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px"> -->
+    <p><span class="w3-large w3-text-black w3-margin-right">Cameron Johnson.</span> Mystery Archive on YouTube.</p>
+    <p>"Christopher worked with us as a voice actor on multiple episodes of Mystery Archive, a true crime web series for YouTube. He showed great range, up to the task of playing characters of different mentalities and voice styles. He was always timely with his submissions, and easy to work with!"</p><br>
+   
+    <!-- <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px"> -->
+    <p><span class="w3-large w3-text-black w3-margin-right">Kevin Krčmar.</span> EpicBrickProduction on YouTube.</p>
+    <p>"Christopher and I met via a casting website. We collaborated on two projects in which Christopher showed his wide-ranged voice. Recordings are always the best quality, he does more takes and truly understands the story and character given to him. Looking forward to our next collaboration. The future looks bright for him in the world of voice acting!"</p><br>
     
-    <section id="contact-me">
-      <h2>Contact Me</h2>
-      <ul>
-        <li><a href="https://twitter.com/ChrisDrapeVO">Twitter</a></li>
-        <li><a href="https://www.youtube.com/channel/UCZANivx2rNLjnqWqkE8d9nQ">YouTube</a></li>
-        <li><a href="mailto:christopherdrape@gmail.com">Email</a></li>
-      </ul>
-    </section>
+    
+    <!-- Grid for pricing tables -->
+    <!-- <h3 class="w3-padding-16">My Price</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">5GB Storage</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 10</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
 
-    <script src="script.js"></script>
-  </body>
+      <div class="w3-half">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div> -->
+    <!-- End Grid/Pricing tables -->
+    <!-- </div> -->
+    
+  <!-- End About Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact Me</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Cebu, PH</p>
+      <!-- <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p> -->
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: christopherdrape@gmail.com</p>
+    </div>
+    
+    <!-- Image of location/map -->
+    <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin:32px 0">
+   
+    <p>Lets get in touch. Send me a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form> -->
+  <!-- End Contact Section -->
+  </div>  
+  
+  <style>
+    /* Remove underline from anchor links */
+    a {
+      text-decoration: none;
+    }
+  </style>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i> -->
+    <!-- <i class="fa fa-instagram w3-hover-opacity"></i> -->
+    <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
+    <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
+    <!-- <i class="fa fa-linkedin w3-hover-opacity"></i> -->
+    <a href="https://www.youtube.com/channel/UCZANivx2rNLjnqWqkE8d9nQ">
+      <i class="fa fa-youtube-play w3-hover-opacity"></i>
+    </a>
+    <a href="https://twitter.com/ChrisDrapeVO">
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+    </a>
+    
+    <i class="fa fa-google w3-hover-opacity"></i>
+    
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
 </html>
