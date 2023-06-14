@@ -38,8 +38,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </a>
   <div class="w3-bar-block w3-center">
     <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
-    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#voiceReels" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Voice Reels</a>
+    <a href="#equipment" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Equipment</a>
+    <a href="#testimonials" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Testimonials</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About Me</a>
     <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
   </div>
 </nav>
@@ -56,28 +58,28 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p> Voice Actor - Voiceover Artist</p>
     <img src="Images/ChrisCompressed.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
     <img src="Images/ChrisCompressed.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
-    <!-- <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
-      <i class="fa fa-download"></i> Download Resume
-    </button> -->
   </header>
 
 
   <!-- Demo Reels -->
   <!-- <h3 class="w3-padding-24">Demo Reels</h3> -->
 
-<!-- Voice Reels -->
-<h3 class="w3-padding-24">Voice Reels</h3>
-<p><span class="w3-large w3-text-black w3-margin-right">Show Reel 1</span></p>
-<audio controls controlsList="Download">
-  <source src="Audio/Showreel.mp3" type="audio/mp3">
-  Your browser does not support the audio element.
-</audio>
+  <!-- Voice Reels -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="voiceReels">
+    <h3 class="w3-padding-24">Voice Reels</h3>
+    <p><span class="w3-large w3-text-black w3-margin-right">Show Reel</span></p>
+    <audio controls controlsList="Download">
+      <source src="Audio/Showreel.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+  
+    <p><span class="w3-large w3-text-black w3-margin-right">Character Voices</span></p>
+    <audio controls controlsList="download">
+      <source src="Audio/CharacterVoices.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
 
-<p><span class="w3-large w3-text-black w3-margin-right">Character Voices</span></p>
-<audio controls controlsList="download">
-  <source src="Audio/CharacterVoices.mp3" type="audio/mp3">
-  Your browser does not support the audio element.
-</audio>
 
 
   <!-- Portfolio Section -->
@@ -104,23 +106,49 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- End Portfolio Section -->
   <!-- </div> -->
 
-  <!-- About Section -->
+    <!-- Equipment Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="equipment">
+      <h2>Equipment</h2>
+      <div class="w3-section">
+        <img src="Images/at2035_01a.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <br><p><span class="w3-large w3-text-black w3-margin-right">Microphone</span> Audio Technica AT2035</p><br>
+      </div>
+      <div class="w3-section">
+        <img src="Images/scarlettsolo-hero-806-330.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-text-black w3-margin-right">Interface</span> Focusrite Scarelett Solo 3rd Gen</p>
+      </div>
+      <div class="w3-section">
+        <img src="Images/ath-m40x_01a.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <br><p><span class="w3-large w3-text-black w3-margin-right">Headphones</span> Audio Technica ATH-M40x</p>
+      </div>
+    </div>
+
+
+    <!-- Testimonials Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="testimonials">
+      <h2>Testimonials</h2>
+      <hr class="w3-opacity">
+      <!-- <img src="/w3images/avatar_smoke.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px"> -->
+      <p><span class="w3-large w3-text-black w3-margin-right">Cameron Johnson</span> Mystery Archive on YouTube.</p>
+      <p>"Christopher worked with us as a voice actor on multiple episodes of Mystery Archive, a true crime web series for YouTube. He showed great range, up to the task of playing characters of different mentalities and voice styles. He was always timely with his submissions, and easy to work with!"</p><br>
+      <!-- <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px"> -->
+      <p><span class="w3-large w3-text-black w3-margin-right">Kevin Krčmar</span> EpicBrickProduction on YouTube.</p>
+      <p>"Christopher and I met via a casting website. We collaborated on two projects in which Christopher showed his wide-ranged voice. Recordings are always the best quality, he does more takes and truly understands the story and character given to him. Looking forward to our next collaboration. The future looks bright for him in the world of voice acting!"</p><br>    
+    </div>
+      
+  <!-- About Me Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
-    <h2>About</h2>
+    <h2>About Me</h2>
     <hr class="w3-opacity">
     <p>I have had a passion for voice acting and voice over for quite a few years. Over the last couple years, I have been able to improve my skills and gather knowledge about the industry. Every day, I am grateful for the opportunity to grow and practice in a craft I love.
       I am an experienced actor, having tried my hand at Musical Theater, Improv Sketches, as well as Student Films. I have been able to establish a small, but constantly growing, portfolio of voice work in my time in the industry. If you are looking for someone with a Baritone range for Young Adult or Adult roles, you've found your man!
     </p>
-
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24">Testimonials</h3>
-    <!-- <img src="/w3images/avatar_smoke.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px"> -->
-    <p><span class="w3-large w3-text-black w3-margin-right">Cameron Johnson.</span> Mystery Archive on YouTube.</p>
-    <p>"Christopher worked with us as a voice actor on multiple episodes of Mystery Archive, a true crime web series for YouTube. He showed great range, up to the task of playing characters of different mentalities and voice styles. He was always timely with his submissions, and easy to work with!"</p><br>
+  </hr>
+    <!-- Download Resume -->
+    <a href="Documents/Resume.pdf" class="w3-button w3-light-grey w3-padding-large w3-margin-top" download>
+      <i class="fa fa-download"></i> Download Resume
+    </a>
    
-    <!-- <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px"> -->
-    <p><span class="w3-large w3-text-black w3-margin-right">Kevin Krčmar.</span> EpicBrickProduction on YouTube.</p>
-    <p>"Christopher and I met via a casting website. We collaborated on two projects in which Christopher showed his wide-ranged voice. Recordings are always the best quality, he does more takes and truly understands the story and character given to him. Looking forward to our next collaboration. The future looks bright for him in the world of voice acting!"</p><br>    
   <!-- End About Section -->
   </div>
 
